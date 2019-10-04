@@ -3,9 +3,9 @@ def binary_search_rec(a, key, low, high)
 
   middle = low + ((high - low) / 2)
 
-  if a[middle] > key && a.length > 0
+  if a[middle] > key
     return binary_search_rec(a, key, low, middle - 1)
-  elsif a[middle] < key && a.length > 0
+  elsif a[middle] < key
     return binary_search_rec(a, key, middle + 1, high)
   else
     return middle

@@ -1,4 +1,4 @@
-require 'algorithms/binary_search'
+require 'algorithms/binary_search_constant'
 
 RSpec.describe 'Binary search works correctly' do
   it 'returns -1' do
