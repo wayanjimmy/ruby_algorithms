@@ -4,11 +4,9 @@ def binary_search(a, key)
 
   while low <= high
     mid = low + ((high - low) / 2)
-    if a[mid] == key
-      return mid
-    end
+    return mid if a[mid] == key
 
-    if a[mid] < key 
+    if a[mid] < key
       low = mid + 1
     else
       high = mid - 1
@@ -17,4 +15,3 @@ def binary_search(a, key)
 
   return -1
 end
-
